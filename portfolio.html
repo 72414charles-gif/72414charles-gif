@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Web Developer & Storyteller Portfolio</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; overflow-x: hidden; }
+        header { background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); padding: 20px 0; position: sticky; top: 0; z-index: 100; }
+        nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
+        nav h1 { color: white; font-size: 1.8em; }
+        nav ul { display: flex; list-style: none; gap: 20px; }
+        nav a { color: white; text-decoration: none; font-weight: bold; transition: color 0.3s; }
+        nav a:hover { color: #ffd93d; }
+        .hero { text-align: center; padding: 100px 20px; color: white; }
+        .hero h2 { font-size: 3em; margin-bottom: 20px; animation: fadeInUp 1s; }
+        .hero p { font-size: 1.5em; margin-bottom: 30px; animation: fadeInUp 1s 0.2s both; }
+        .cta { display: inline-block; background: #ff6b6b; color: white; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 1.2em; transition: all 0.3s; animation: fadeInUp 1s 0.4s both; box-shadow: 0 10px 30px rgba(255,107,107,0.4); }
+        .cta:hover { transform: scale(1.05); box-shadow: 0 15px 40px rgba(255,107,107,0.6); }
+        section { padding: 80px 20px; max-width: 1200px; margin: 0 auto; }
+        h2.section-title { text-align: center; font-size: 2.5em; margin-bottom: 50px; color: white; }
+        #about { background: rgba(255,255,255,0.1); border-radius: 20px; backdrop-filter: blur(10px); }
+        #about p { font-size: 1.2em; max-width: 800px; margin: 0 auto; text-align: center; }
+        #skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .skill { background: rgba(255,255,255,0.2); padding: 30px; border-radius: 15px; text-align: center; transition: all 0.3s; backdrop-filter: blur(5px); }
+        .skill:hover { transform: translateY(-10px); background: rgba(255,255,255,0.3); }
+        .skill i { font-size: 3em; margin-bottom: 10px; display: block; }
+        #projects { background: rgba(255,255,255,0.1); border-radius: 20px; backdrop-filter: blur(10px); }
+        .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .project-card { background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.2); transition: all 0.4s; }
+        .project-card:hover { transform: translateY(-15px); box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
+        .project-icon { height: 150px; background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); display: flex; align-items: center; justify-content: center; font-size: 4em; }
+        .project-info { padding: 25px; }
+        .project-info h3 { margin-bottom: 10px; }
+        .project-info p { color: #666; margin-bottom: 20px; }
+        .project-links { display: flex; gap: 10px; }
+        .btn { padding: 10px 20px; border-radius: 25px; text-decoration: none; font-weight: bold; transition: all 0.3s; flex: 1; text-align: center; }
+        .btn-live { background: #28a745; color: white; }
+        .btn-github { background: #6c757d; color: white; }
+        .btn:hover { transform: scale(1.05); }
+        #contact { text-align: center; background: rgba(255,255,255,0.1); border-radius: 20px; backdrop-filter: blur(10px); }
+        #contact a { color: #ffd93d; font-size: 1.5em; display: block; margin: 10px 0; text-decoration: none; }
+        footer { text-align: center; padding: 20px; color: white; font-size: 0.9em; }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(50px); } to { opacity: 1; transform: translateY(0); } }
+        @media (max-width: 768px) { .hero h2 { font-size: 2em; } nav ul { display: none; } .projects-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>🚀 Your Name</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Web Developer & Storyteller</h2>
+        <p>Building interactive apps, games & PWAs with pure HTML/CSS/JS. Outlier.ai contributor crafting AI prompts & stories. Rapid prototypes delivered in hours!</p>
+        <a href="#projects" class="cta">View My Projects ✨</a>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <p>Dynamic beginner developer passionate about creating fun, responsive web experiences like games and productivity tools. Currently working at Outlier.ai, honing skills in AI prompting, content creation, and code iteration. From Magic 8-Ball to full PWAs—let's build your next project! 100% client-focused with quick turnarounds.</p>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skill">
+            <div>🛠️</div>
+            <h3>HTML/CSS/JS</h3>
+            <p>Responsive designs, animations, PWAs</p>
+        </div>
+        <div class="skill">
+            <div>🎮</div>
+            <h3>Game Dev</h3>
+            <p>Browser games with logic & audio</p>
+        </div>
+        <div class="skill">
+            <div>📱</div>
+            <h3>Prototyping</h3>
+            <p>Single-file apps, localStorage, CRUD</p>
+        </div>
+        <div class="skill">
+            <div>✍️</div>
+            <h3>Writing & AI</h3>
+            <p>Stories, prompts, Outlier.ai expert</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">Portfolio Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-icon">🧙‍♂️</div>
+                <div class="project-info">
+                    <h3>Magic 8-Ball</h3>
+                    <p>Interactive fortune teller with animations & random answers. Enter key support.</p>
+                    <div class="project-links">
+                        <a href="https://your-live-link/magic8ball.html" target="_blank" class="btn btn-live">Live Demo</a>
+                        <a href="https://github.com/yourusername/portfolio-apps/blob/main/magic8ball.html" target="_blank" class="btn btn-github">View Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-icon">📝</div>
+                <div class="project-info">
+                    <h3>Todo List PWA</h3>
+                    <p>Add/edit/delete tasks, mark complete, offline-ready with localStorage.</p>
+                    <div class="project-links">
+                        <a href="https://your-live-link/todo-app.html" target="_blank" class="btn btn-live">Live Demo</a>
+                        <a href="https://github.com/yourusername/portfolio-apps/blob/main/todo-app.html" target="_blank" class="btn btn-github">View Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-icon">🎰</div>
+                <div class="project-info">
+                    <h3>Slot Machine Simulator</h3>
+                    <p>Spin reels, bet virtual coins, jackpots with spinning anims & JS audio.</p>
+                    <div class="project-links">
+                        <a href="https://your-live-link/slot-machine.html" target="_blank" class="btn btn-live">Live Demo</a>
+                        <a href="https://github.com/yourusername/portfolio-apps/blob/main/slot-machine.html" target="_blank" class="btn btn-github">View Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-icon">✊✋✌️</div>
+                <div class="project-info">
+                    <h3>Rock Paper Scissors</h3>
+                    <p>Play vs AI, track win streaks & stats (localStorage persistent).</p>
+                    <div class="project-links">
+                        <a href="https://your-live-link/rps-game.html" target="_blank" class="btn btn-live">Live Demo</a>
+                        <a href="https://github.com/yourusername/portfolio-apps/blob/main/rps-game.html" target="_blank" class="btn btn-github">View Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-icon">🍅</div>
+                <div class="project-info">
+                    <h3>Pomodoro Timer</h3>
+                    <p>25/5 cycles, pause/resume, beep alarms via Web Audio API.</p>
+                    <div class="project-links">
+                        <a href="https://your-live-link/pomodoro.html" target="_blank" class="btn btn-live">Live Demo</a>
+                        <a href="https://github.com/yourusername/portfolio-apps/blob/main/pomodoro.html" target="_blank" class="btn btn-github">View Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-icon">🔒</div>
+                <div class="project-info">
+                    <h3>Password Generator</h3>
+                    <p>Custom length/strength, copy to clipboard, real-time meter.</p>
+                    <div class="project-links">
+                        <a href="https://your-live-link/password-gen.html" target="_blank" class="btn btn-live">Live Demo</a>
+                        <a href="https://github.com/yourusername/portfolio-apps/blob/main/password-gen.html" target="_blank" class="btn btn-github">View Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-icon">⚖️</div>
+                <div class="project-info">
+                    <h3>BMI Calculator</h3>
+                    <p>Instant results, categories, history list with localStorage.</p>
+                    <div class="project-links">
+                        <a href="https://your-live-link/bmi-calc.html" target="_blank" class="btn btn-live">Live Demo</a>
+                        <a href="https://github.com/yourusername/portfolio-apps/blob/main/bmi-calc.html" target="_blank" class="btn btn-github">View Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-icon">📖</div>
+                <div class="project-info">
+                    <h3>Story Generator</h3>
+                    <p>Theme/genre input → Randomized tales. Ties to my writing passion!</p>
+                    <div class="project-links">
+                        <a href="https://your-live-link/story-gen.html" target="_blank" class="btn btn-live">Live Demo</a>
+                        <a href="https://github.com/yourusername/portfolio-apps/blob/main/story-gen.html" target="_blank" class="btn btn-github">View Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Let's Work Together!</h2>
+        <p>Upwork: <a href="https://upwork.com/yourprofile" target="_blank">Hire Me</a></p>
+        <p>Email: your.email@example.com | LinkedIn: <a href="https://linkedin.com/in/yourname" target="_blank">Profile</a></p>
+        <p>Open to web apps, games, stories & AI prompts. Rates from \$15/hr.</p>
+    </section>
+
+    <footer>
+        &copy; 2026 Your Name. Built with ❤️ using pure HTML/CSS/JS. | Outlier.ai Contributor 🚀
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
